@@ -9,14 +9,4 @@ function getConnection(): PDO
     $password = "root";
 
     return new PDO("mysql:host=$host:$port;dbname=$database", $username, $password);
-
-    // try {
-    //     $connection = new PDO("mysql:host=$host:$port;dbname=$database", $username, $password);
-    //     echo "Sukses terkoneksi ke database MySQL" . PHP_EOL;
-
-    //     // menutup koneksi
-    //     $connection = null;
-    // } catch (PDOException $exception) {
-    //     echo "Gaga; terkoneksi ke database MySQL " . $exception->getMessage() . PHP_EOL;
-    // }
 }
